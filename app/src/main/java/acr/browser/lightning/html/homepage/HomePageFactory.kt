@@ -1,6 +1,6 @@
 package acr.browser.lightning.html.homepage
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.di.GeneratedHtmlDir
 import acr.browser.lightning.browser.theme.ThemeProvider
 import acr.browser.lightning.compose.toRgbHexString

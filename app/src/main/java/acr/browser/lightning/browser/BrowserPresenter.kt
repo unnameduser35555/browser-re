@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.adblock.allowlist.AllowListModel
 import acr.browser.lightning.browser.data.CookieAdministrator
 import acr.browser.lightning.browser.di.BrowserScope

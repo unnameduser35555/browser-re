@@ -1,6 +1,6 @@
 package acr.browser.lightning.database.bookmark
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.concurrency.CoroutineDispatchers
 import acr.browser.lightning.database.Bookmark
 import acr.browser.lightning.database.asFolder

@@ -1,6 +1,6 @@
 package acr.browser.lightning.adblock.source
 
-import com.altdiscord.app.BuildConfig
+import acr.browser.lightning.BuildConfig
 import acr.browser.lightning.adblock.parser.HostsFileParser
 import acr.browser.lightning.concurrency.CoroutineDispatchers
 import acr.browser.lightning.log.Logger

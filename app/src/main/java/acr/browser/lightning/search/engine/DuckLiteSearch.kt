@@ -1,6 +1,6 @@
 package acr.browser.lightning.search.engine
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 
 /**
  * The DuckDuckGo Lite search engine.

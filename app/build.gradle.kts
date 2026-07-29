@@ -92,7 +92,7 @@ android {
     lint {
         abortOnError = true
     }
-    namespace = "com.altdiscord.app"
+    namespace = "acr.browser.lightning"
 }
 
 dependencies {

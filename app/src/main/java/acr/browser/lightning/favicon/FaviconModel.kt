@@ -1,6 +1,6 @@
 package acr.browser.lightning.favicon
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.di.FaviconCacheDir
 import acr.browser.lightning.browser.image.LetterImagePainter
 import acr.browser.lightning.concurrency.CoroutineDispatchers

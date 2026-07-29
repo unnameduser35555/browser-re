@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser.tab.bundle
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.tab.BookmarkPageInitializer
 import acr.browser.lightning.browser.tab.BundleInitializer
 import acr.browser.lightning.browser.tab.DownloadPageInitializer

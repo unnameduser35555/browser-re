@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser.image
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint

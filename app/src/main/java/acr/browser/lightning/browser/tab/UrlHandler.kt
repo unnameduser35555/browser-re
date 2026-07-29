@@ -1,7 +1,7 @@
 package acr.browser.lightning.browser.tab
 
-import com.altdiscord.app.BuildConfig
-import com.altdiscord.app.R
+import acr.browser.lightning.BuildConfig
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.di.IncognitoMode
 import acr.browser.lightning.constant.FILE
 import acr.browser.lightning.extensions.snackbar

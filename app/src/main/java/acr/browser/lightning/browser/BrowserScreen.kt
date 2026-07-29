@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.ThemableActivity
 import acr.browser.lightning.browser.image.LetterImagePainter
 import acr.browser.lightning.browser.menu.MenuSelection

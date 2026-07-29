@@ -1,7 +1,7 @@
 package acr.browser.lightning.browser.di
 
 import acr.browser.lightning.AppTheme
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.tab.DefaultTabTitle
 import acr.browser.lightning.browser.theme.ThemeProvider
 import acr.browser.lightning.browser.ui.TabConfiguration

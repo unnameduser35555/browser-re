@@ -1,7 +1,7 @@
 package acr.browser.lightning.settings.screens
 
 import acr.browser.lightning.AppTheme
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.ui.TabConfiguration
 import acr.browser.lightning.compose.StateProvider
 import acr.browser.lightning.preference.UserPreferencesDataStore

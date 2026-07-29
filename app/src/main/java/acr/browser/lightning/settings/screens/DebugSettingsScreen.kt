@@ -1,6 +1,6 @@
 package acr.browser.lightning.settings.screens
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.compose.StateProvider
 import acr.browser.lightning.preference.DeveloperPreferenceStore
 import acr.browser.lightning.resources.ResourceProvider

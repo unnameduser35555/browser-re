@@ -1,6 +1,6 @@
 package acr.browser.lightning.settings
 
-import com.altdiscord.app.R
+import acr.browser.lightning.R
 import acr.browser.lightning.browser.StatusBar
 import acr.browser.lightning.compose.StateProvider
 import acr.browser.lightning.device.BuildInfo
