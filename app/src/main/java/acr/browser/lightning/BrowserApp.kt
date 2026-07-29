@@ -63,10 +63,14 @@ class BrowserApp : Application() {
         }
 
         val isIncognito = getProcessName() == "$packageName:incognito"
+        val webViewStorageRoot = File(filesDir, "webview")
+        webViewStorageRoot.mkdirs()
 
         if (isIncognito) {
-            File(dataDir, "app_webview_incognito").deleteRecursively()
-            WebView.setDataDirectorySuffix("incognito")
+            File(webViewStorageRoot, "incognito").deleteRecursively()
+            WebView.setDataDirectorySuffix("internal_incognito")
+        } else {
+            WebView.setDataDirectorySuffix("internal_default")
         }
 
         val defaultHandler = Thread.getDefaultUncaughtExceptionHandler()

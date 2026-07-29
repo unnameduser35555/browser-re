@@ -1,7 +1,7 @@
 package acr.browser.lightning.settings.screens
 
-import acr.browser.lightning.BuildConfig
-import acr.browser.lightning.R
+import com.altdiscord.app.BuildConfig
+import com.altdiscord.app.R
 import acr.browser.lightning.adblock.BloomFilterAdBlocker
 import acr.browser.lightning.adblock.source.HostsSourcePreference
 import acr.browser.lightning.adblock.source.HostsSourceType

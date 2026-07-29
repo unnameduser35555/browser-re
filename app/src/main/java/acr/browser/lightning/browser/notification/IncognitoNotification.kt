@@ -1,7 +1,7 @@
 package acr.browser.lightning.browser.notification
 
 import acr.browser.lightning.IncognitoBrowserActivity
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.utils.ThemeUtils
 import android.Manifest
 import android.app.Notification

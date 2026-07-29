@@ -1,6 +1,6 @@
 package acr.browser.lightning.adblock
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.adblock.source.HostsDataSourceProvider
 import acr.browser.lightning.adblock.source.HostsResult
 import acr.browser.lightning.adblock.util.BloomFilter

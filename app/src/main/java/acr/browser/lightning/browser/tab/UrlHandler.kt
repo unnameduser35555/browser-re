@@ -1,7 +1,7 @@
 package acr.browser.lightning.browser.tab
 
-import acr.browser.lightning.BuildConfig
-import acr.browser.lightning.R
+import com.altdiscord.app.BuildConfig
+import com.altdiscord.app.R
 import acr.browser.lightning.browser.di.IncognitoMode
 import acr.browser.lightning.constant.FILE
 import acr.browser.lightning.extensions.snackbar
@@ -50,13 +50,7 @@ class UrlHandler @Inject constructor(
             return continueLoadingUrl(view, url, headers)
         }
 
-        return if (isMailOrIntent(url, view) || intentUtils.startActivityForUrl(view, url)) {
-            // If it was a mailto: link, or an intent, or could be launched elsewhere, do that
-            true
-        } else {
-            // If none of the special conditions was met, continue with loading the url
-            continueLoadingUrl(view, url, headers)
-        }
+        return continueLoadingUrl(view, url, headers)
     }
 
     private fun continueLoadingUrl(
@@ -84,10 +78,7 @@ class UrlHandler @Inject constructor(
 
     private fun isMailOrIntent(url: String, view: WebView): Boolean {
         if (url.startsWith("mailto:")) {
-            val mailTo = MailTo.parse(url)
-            val i = Utils.newEmailIntent(mailTo.to, mailTo.subject, mailTo.body, mailTo.cc)
-            activity.startActivity(i)
-            view.reload()
+            view.stopLoading()
             return true
         } else if (url.startsWith("intent://")) {
             val intent = try {
@@ -97,15 +88,7 @@ class UrlHandler @Inject constructor(
             }
 
             if (intent != null) {
-                intent.addCategory(Intent.CATEGORY_BROWSABLE)
-                intent.component = null
-                intent.selector = null
-                try {
-                    activity.startActivity(intent)
-                } catch (e: ActivityNotFoundException) {
-                    logger.log(TAG, "ActivityNotFoundException")
-                }
-
+                view.stopLoading()
                 return true
             }
         } else if (URLUtil.isFileUrl(url) && !url.isSpecialUrl()) {
@@ -124,11 +107,7 @@ class UrlHandler @Inject constructor(
                 )
                 intent.setDataAndType(contentUri, newMimeType)
 
-                try {
-                    activity.startActivity(intent)
-                } catch (e: Exception) {
-                    logger.log(TAG, "Cannot open downloaded file: $url")
-                }
+                logger.log(TAG, "Blocked external file viewer for: $url")
 
             } else {
                 activity.snackbar(R.string.message_open_download_fail)

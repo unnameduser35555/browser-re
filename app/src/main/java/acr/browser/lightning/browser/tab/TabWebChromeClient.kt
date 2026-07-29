@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser.tab
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.browser.view.CustomViewCoordinator
 import acr.browser.lightning.browser.webrtc.WebRtcPermissionsModel
 import acr.browser.lightning.browser.webrtc.WebRtcPermissionsView

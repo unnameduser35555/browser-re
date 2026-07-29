@@ -71,7 +71,7 @@ android {
         create("lightningPlus") {
             dimension = "capabilities"
             buildConfigField("boolean", "FULL_VERSION", "Boolean.parseBoolean(\"true\")")
-            applicationId = "acr.browser.lightning"
+            applicationId = "com.altdiscord.app"
             versionCode = 101
         }
 
@@ -79,7 +79,7 @@ android {
             create("lightningLite") {
                 dimension = "capabilities"
                 buildConfigField("boolean", "FULL_VERSION", "Boolean.parseBoolean(\"false\")")
-                applicationId = "acr.browser.barebones"
+                applicationId = "com.altdiscord.app"
                 versionCode = 102
             }
         }
@@ -92,7 +92,7 @@ android {
     lint {
         abortOnError = true
     }
-    namespace = "acr.browser.lightning"
+    namespace = "com.altdiscord.app"
 }
 
 dependencies {

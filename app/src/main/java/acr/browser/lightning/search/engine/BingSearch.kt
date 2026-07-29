@@ -1,6 +1,6 @@
 package acr.browser.lightning.search.engine
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 
 /**
  * The Bing search engine.

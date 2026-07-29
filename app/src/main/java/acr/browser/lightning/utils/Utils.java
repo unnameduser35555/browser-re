@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-import acr.browser.lightning.R;
+import com.altdiscord.app.R;
 import acr.browser.lightning.constant.Constants;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
