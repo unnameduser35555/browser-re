@@ -1,6 +1,6 @@
 package acr.browser.lightning.search.suggestions
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.browser.di.SuggestionsClient
 import acr.browser.lightning.concurrency.CoroutineDispatchers
 import acr.browser.lightning.constant.UTF8

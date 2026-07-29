@@ -1,6 +1,6 @@
 package acr.browser.lightning.settings.screens
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.browser.search.SearchBoxDisplayChoice
 import acr.browser.lightning.browser.view.RenderingMode
 import acr.browser.lightning.compose.StateProvider

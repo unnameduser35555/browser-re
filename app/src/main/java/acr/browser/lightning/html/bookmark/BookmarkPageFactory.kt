@@ -1,6 +1,6 @@
 package acr.browser.lightning.html.bookmark
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.browser.di.FaviconCacheDir
 import acr.browser.lightning.browser.di.GeneratedHtmlDir
 import acr.browser.lightning.browser.theme.ThemeProvider

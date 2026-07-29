@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser.search
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.preference.UserPreferencesDataStore
 import acr.browser.lightning.utils.Utils
 import acr.browser.lightning.utils.isSpecialUrl

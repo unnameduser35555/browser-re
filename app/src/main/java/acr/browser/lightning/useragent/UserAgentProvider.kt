@@ -15,13 +15,21 @@ class DefaultUserAgentProvider @Inject constructor(
     private val application: Application,
 ) : UserAgentProvider {
     override suspend fun getUserAgent(): String =
-        when (userPreferencesDataStore.userAgentChoice.get()) {
-            UserAgentChoice.DEFAULT -> WebSettings.getDefaultUserAgent(application)
-            UserAgentChoice.DESKTOP -> DESKTOP_USER_AGENT
-            UserAgentChoice.MOBILE -> MOBILE_USER_AGENT
-            UserAgentChoice.CUSTOM -> userPreferencesDataStore.userAgentString.get()
-                .takeIf(String::isNotEmpty).orEmpty()
-        }
+        sanitizeUserAgent(
+            when (userPreferencesDataStore.userAgentChoice.get()) {
+                UserAgentChoice.DEFAULT -> WebSettings.getDefaultUserAgent(application)
+                UserAgentChoice.DESKTOP -> DESKTOP_USER_AGENT
+                UserAgentChoice.MOBILE -> MOBILE_USER_AGENT
+                UserAgentChoice.CUSTOM -> userPreferencesDataStore.userAgentString.get()
+                    .takeIf(String::isNotEmpty).orEmpty()
+            }
+        )
+
+    private fun sanitizeUserAgent(userAgent: String): String = userAgent
+        .replace("; wv", "")
+        .replace(" wv", "")
+        .replace(Regex("\\s+"), " ")
+        .trim()
 }
 
 /**

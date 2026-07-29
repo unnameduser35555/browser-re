@@ -1,6 +1,6 @@
 package acr.browser.lightning.browser.tab
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.constant.SCHEME_BOOKMARKS
 import acr.browser.lightning.constant.SCHEME_HOMEPAGE
 import acr.browser.lightning.extensions.resizeAndShow

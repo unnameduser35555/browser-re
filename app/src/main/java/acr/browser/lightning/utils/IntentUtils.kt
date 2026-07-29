@@ -1,6 +1,6 @@
 package acr.browser.lightning.utils
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.constant.INTENT_ORIGIN
 import acr.browser.lightning.log.Logger
 import android.app.Activity

@@ -15,7 +15,7 @@
  */
 package acr.browser.lightning.dialog
 
-import acr.browser.lightning.R
+import com.altdiscord.app.R
 import acr.browser.lightning.extensions.dimen
 import acr.browser.lightning.extensions.resizeAndShow
 import acr.browser.lightning.utils.DeviceUtils
